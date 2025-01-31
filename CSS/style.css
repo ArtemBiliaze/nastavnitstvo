@@ -5,15 +5,13 @@
 
 a {
   text-decoration: none;
+  color: white;
 }
 
-/* .nav {
-  margin: 48px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-} */
+a span {
+  color: rgb(254, 70, 28);
+}
+
 
 body {
   font-family: Outfit, serif;
@@ -24,57 +22,133 @@ body {
 }
 
 .header-container {
-    width: 100%;
-    max-width: 1170px;
-    padding: 0 15px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-.header-content {
-  margin: 48px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
 }
 
-/* nav {
-position: absolute;
-width: 602px;
-height: 15px;
-left: 816px;
-top: 42px;
-} */
-
-/* .btn-in-header {
-   Download CV 
-position: absolute;
-width: 123px;
-height: 15px;
-left: 1483px;
-top: 39px;
-color: rgb(255, 255, 255);
-font-family: Outfit;
-font-size: 16px;
-font-weight: 700;
-line-height: 15px;
-letter-spacing: 0%;
-text-align: center;
-text-transform: capitalize;
-} */
-
-/*.span {
-font-family: Outfit;
-font-size: 16px;
-font-weight: 700;
-line-height: 15px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
-} */
-
-.BlogPost {
-  background-color: rgba(36, 38, 59, 1);
+.header-content{
+  position: fixed;
+  left: 280px;
+  display: flex;
+  gap: 20px;
 }
+
+ul {
+  list-style: none;
+  color: white;
+}
+
+.navigation-list {
+  display: flex;
+  width: 602px;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+nav {
+  width: 100%;
+  margin-top: 35px;
+}
+
+.btn-in-header, .btn-hireMe{
+  width: 152px;
+  height: 50px;
+  border-radius: 4px;
+  background: rgb(254, 70, 28);
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 22px;
+  transition: .3s;
+}
+
+.btn-in-header:hover, .btn-hireMe:hover{
+  background-color: white;
+  color: rgb(254, 70, 28);
+}
+
+.btn-DownloadCV-in-Banner {
+  width: 152px;
+  height: 50px;
+  border-radius: 4px;
+  background: rgb(31, 34, 53);
+  border: 1px solid white;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 22px;
+  transition: .3s;
+  margin-left: 23px;
+}
+.banner-content {
+  display: grid;
+}
+.social-media {
+  /* Social */
+position: absolute;
+width: 50px;
+height: 180px;
+left: 47px;
+right: 1823px;
+top: 410px;
+bottom: 310px;
+}
+.presentation-content {
+  /* Content */
+position: absolute;
+width: 654px;
+height: 340px;
+left: 300px;
+right: 966px;
+top: 335px;
+bottom: 225px;
+}
+
+.presentation-content p:first-child {
+  color: rgb(255, 255, 255);
+  font-family: Public Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 15%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.presentation-content p:nth-of-type(2){
+  color: rgb(255, 255, 255);
+  font-family: Public Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.presentation-content span {
+  color: red;
+}
+
+.presentation-content h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  color: white;
+}
+/* .My-photo {
+  
+position: absolute;
+width: 634px;
+height: 634px;
+left: 1009px;
+top: 242px;
+} */
