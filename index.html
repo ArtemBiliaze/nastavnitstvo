@@ -13,237 +13,245 @@
     <title> My First Work</title>
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <div class="header-content">
-          <nav>
-            <ul class="navigation-list">
-              <li><a href="#Home"><span>Home</span></a></li>
-              <li><a href="#About">About</a></li>
-              <li><a href="#Portfolio">Portfolio</a></li>
-              <li><a href="#Services">Services</a></li>
-              <li><a href="#Resume">Resume</a></li>
-              <li><a href="#Client">Client</a></li>
-              <li><a href="#Blog">Blog</a></li>
-              <li><a href="#Contact">Contact</a></li>
-            </ul>
-          </nav>
-          <button class="btn-in-header">Download CV</button>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="banner-content">
-          <div class="social-media">
-            <img src="images/SocialIcon.svg" alt="Icon Of My Social Media">
+      <header class="header">
+              <nav class="menu">
+                  <a class="menu__item" href="#Home"><span>Home</span></a>
+                  <a class="menu__item" href="#About">About</a>
+                  <a class="menu__item" href="#Portfolio">Portfolio</a>
+                  <a class="menu__item" href="#Services">Services</a>
+                  <a class="menu__item" href="#Resume">Resume</a>
+                  <a class="menu__item" href="#Client">Client</a>
+                  <a class="menu__item" href="#Blog">Blog</a>
+                  <a class="menu__item" href="#Contact">Contact</a>
+                  <a class="menu-buttom btn">Download CV</a>
+              </nav>
+      </header>
+      <main>
+        <section class="main-banner">
+            <div class="social-media">
+              <a href="#">
+                <img class="social-media__icons__item"
+                src="images/linked.svg" 
+                alt="Icon Of LinkedIn">
+              </a>
+              <a href="#">
+                <img class="social-media__icons__item" src="images/instagram.svg" 
+                alt="Icon Of Instagram">
+              </a>
+              <a href="#">
+                <img class="social-media__icons__item" src="images/behance.svg" 
+                alt="Icon Of Behance">
+              </a>
+            </div>
+          <div class="presentation-content">
+            <h2 class="presentation-content__welcome">Welcome My Portfolio</h2>
+          <h1 class="presentation-content__main-title">Hello, I'm Artem Biliaze<br><span>Professional </span>Designer.</h1>
+          <p class="presentation-content__main-description">Conveniently customize proactive web services for leveraged without<br> 
+            continualliery aggregate fricctionle ou wellies richard.</p>
+            <div class="presentation-content__buttons">
+              <a class="presentation-content__button-hire btn">Hire Me</a>
+              <a class="presentation-content__button__item btn">Download CV</a>
+            </div>
           </div>
-        <div class="presentation-content">
-          <p>Welcome My Portfolio</p>
-        <h1>Hello, I'm Artem Biliaze<br><span>Professional </span>Designer.</h1>
-        <p>Conveniently customize proactive web services for leveraged without<br> 
-          continualliery aggregate fricctionle ou wellies richard.</p>
-          <button class="btn-hireMe">Hire Me</button>
-          <button class="btn-DownloadCV-in-Banner">Download CV</button>
-        </div>
-        <div>
-          <img src="images/FigmaIcon.svg" alt="Icon of Figma">
-          <img src="images/XDIcon.svg" alt="Icon of XD">
-          <img src="images/BlackEllipsePicture.svg" alt="My photo" class="My-photo">
-          <img src="images/PSIcon.svg" alt="Icon of PS">
-          <img src="images/SketchIcon.svg" alt="Icon of Sketch">
-        </div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div>
+          <div class="presentation-content__img">
+           <img src="images/main-banner.svg" alt="Here my Photo">
+          </div>
+        </section>
+        <section class="aboutMe-section">
+          <div class="aboutMe-section__content__main">
+          <div class="aboutMe-section__img">
             <img src="images/AboutMePicture.svg" alt="My Photo">
           </div>
-          <a name="About"></a>
-          <p>About Me</p>
-          <h2>Artem Biliaze</h2>
-          <p>I'm Graphic Designer,and I'm very passionate and dedicated to my work 
-            With 20 years experience as a professional Photography, I have lot of
-            acquired the skills and knowledge necessary to make your project a 
-            success. I enjoy every step the Photography process,from discussion 
-            and collaboration.</p>
+          <div class="aboutMe-section__content">
+              <a name="About"></a>
+              <a class="aboutMe-section__content__btn">About Me</a>
+              <h2 class="aboutMe-section__content__title">Artem Biliaze</h2>
+              <p class="aboutMe-section__content__description">I'm Graphic Designer,and I'm very passionate and dedicated to my work 
+                With 20 years experience as a professional Photography, I have lot of
+                acquired the skills and knowledge necessary to make your project a 
+                success. I enjoy every step the Photography process,from discussion 
+                and collaboration.</p>
+              <div class="aboutMe-section__content__dates">
+                <div class="aboutMe-section__content__dates__left">
+                  <div class="aboutMe-section__content__item">
+                    <span class="aboutMe-section__content__caption">Birthday :</span>
+                    <span class="aboutMe-section__content__info">16 september 1983</span>
+                  </div>
+                  <div class="aboutMe-section__content__item">
+                    <span class="aboutMe-section__content__caption">Website :</span>
+                    <span class="aboutMe-section__content__info">www.artembiliaze.com</span>
+                  </div>
+                  <div class="aboutMe-section__content__item">
+                    <span class="aboutMe-section__content__caption">Phone :</span>
+                    <span class="aboutMe-section__content__info">+38 063 476 16 50</span>
+                  </div>
+                  <div class="aboutMe-section__content__item">
+                    <span class="aboutMe-section__content__caption">Study :</span>
+                    <span class="aboutMe-section__content__info">University Of Harvard</span>
+                  </div>
+                </div>
+                <div class="aboutMe-section__content__dates__right">
+                  <div class="aboutMe-section__content__item">
+                    <span class="aboutMe-section__content__caption">Degree :</span>
+                    <span class="aboutMe-section__content__info">Master</span>
+                  </div>
+                  <div class="aboutMe-section__content__item">
+                    <span class="aboutMe-section__content__caption">Mail :</span>
+                    <span class="aboutMe-section__content__info"><a href="mailto:artembiliaze@gmail.com">artembiliaze@gmail.com</a></span>
+                  </div>
+                  <div class="aboutMe-section__content__item">
+                    <span class="aboutMe-section__content__caption">LinkedIn :</span>
+                    <span class="aboutMe-section__content__info"><a href="https://www.linkedin.com/in/artembiliaze/">@artembiliaze</a></span>
+                  </div>
+                  <div class="aboutMe-section__content__item">
+                    <span class="aboutMe-section__content__caption">Freelance :</span>
+                    <span class="aboutMe-section__content__info">Available</span>
+                  </div>
+                </div>
+              </div>
+              <a class="menu-buttom btn">Download CV</a>
+              </div>
+              </div>
+        </section>
+        <section class="portfolio-section">
+          <div class="portfolio-section__content">
+            <div class="portfolio-section__content-main">
+              <a name="Portfolio"></a>
+              <a class="portfolio-section__content-btn">Portfolio</a>
+              <h2 class="portfolio-section__content-title">Some Of My Creative Work</h2>
+            </div>
+              <div class="portfolio-section__content-menu">
+                <a class="portfolio-section__content-menu__item" href="#">All</a>
+                <a class="portfolio-section__content-menu__item" href="#">Mobile</a>
+                <a class="portfolio-section__content-menu__item" href="#">Website</a>
+                <a class="portfolio-section__content-menu__item" href="#">Animation</a>
+                <a class="portfolio-section__content-menu__item" href="#">Exclusive</a>
+              </div>
+            <div class="portfolio-section__content-img">
+               <div class="portfolio-section__content-column">
+                <div class="rectangle-odd"></div>
+               <div class="rectangle-even"></div>
+               </div>
+               <div class="portfolio-section__content-column">
+                <div class="rectangle-even"></div>
+                <div class="rectangle-odd"></div>
+               </div>
+               <div class="portfolio-section__content-column">
+                <div class="rectangle-odd"></div>
+               <div class="rectangle-even"></div>
+               </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <a name="Services"></a>
+            <p>Why Choose Us</p>
+            <h2>Our Work Services</h2>
+          </div>
+          <div>
+            <img src="images/OurWorkServicesPicture.svg" alt="Our Work Services">
+          </div>
+        </section>
+        <section>
+          <div>
+            <a name="Resume"></a>
+            <p>Resume</p>
+            <h2>Skill & Experience</h2>
+          </div>
+          <div>
+            <button>Design</button>
+            <button>Experience</button>
+            <button>Education</button>
+          </div>
+          <div>
+            <p>Adobe Aillusdivator<span>90</span></p>
+            <progress value="90" max="100"></progress>
+            <p>Adobe Photoshop<span>80</span></p>
+            <progress value="80" max="100"></progress>
+            <p>Adobe After Effect<span>70</span></p>
+            <progress value="70" max="100"></progress>
+            <p>Figma<span>60</span></p>
+            <progress value="60" max="100"></progress>
+          </div>
+          <div>
+            <img src="images/ResumePhotoPicture.svg" alt="Resume Photo">
+          </div>
+        </section>
+        <section>
+          <div>
+            <a name="Client"></a>
+            <p>Teatimonial</p>
+            <h2>What Our Client Say About us.</h2>
             <div>
-              <table>
-                <tr>
-                  <td>Bitrthday :</td>
-                  <td>16 september 1983</td>
-                </tr>
-                <tr>
-                  <td>Website :</td>
-                  <td>www.artembiliaze.com</td>
-                </tr>
-                <tr>
-                  <td>Phone :</td>
-                  <td>+38 063 476 16 50</td>
-                </tr>
-                <tr>
-                  <td>Study :</td>
-                  <td>University Of Harvard</td>
-                </tr>
-              </table>
+              <img src="images/DawnJohnsonInfo.svg" alt="Dawn Johnson Info">
+              <img src="images/DawnJohnsonInfo.svg" alt="Dawn Johnson Info">
+              <img src="images/DawnJohnsonInfo.svg" alt="Dawn Johnson Info">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="BlogPost">
+            <a name="Blog"></a>
+            <p>Blog Post</p>
+            <h2>Our Latest Blog</h2>
+            <div>
+              <img src="images/BlogPostPicture.svg" alt="Blog Post">
+              <img src="images/BlogPostPicture.svg" alt="Blog Post">
+              <img src="images/BlogPostPicture.svg" alt="Blog Post">
+            </div>
+          </div>
+        </section>
+        <section class="subscribe-container">
+            <div class="subscribe-container__main">
+              <div class="subscribe-now">
+                <h2 class="subscribe-now__title">Subscribe Now</h2>
+                <h2 class="subscribe-now__newsletter">Get My Newsletter</h2>
+                <p class="subscribe-now__description">Get latest news, updates, tips and divics in your inbox</p>
+              </div>
+              <div class="subscribe-now__input">
+                  <input type="email" name="email" placeholder="Enter your Email" class="subscribe-now__input-item"
+                  required>
+                  <button type="submit" class="subscribe-now__input-button">Subscribe</button>
+              </div>
+            </div>
+        </section>
+        <section>
+          <div>
+            <a name="Contact"></a>
+            <p>Contact</p>
+            <h2>Get In Touch</h2>
+            <div>
+              <h2>Pohone Number</h2>
+              <img src="images/PhoneIcon.svg" alt="Phone Icon"><a href="tel:+380634761650">+380634761650</a><br>
+              <h2>Email Address</h2>
+              <img src="images/EmailIcon.svg" alt="Email Icon"><a href="mailto:artembiliaze@gmail.com">artembiliaze@gmail.com</a>
+              <h2>Office Address</h2>
+              <img src="images/pin-icon.svg" alt="Point Icon"><a href="https://www.google.com/maps?q=European+Union+Ave,+47,+Kiev,+Ukraine" 
+              target="_blank">Europian Union Ave, 47, Kiev, Ukraine</a>
             </div>
             <div>
-              <table>
-                <tr>
-                  <td>Degree :</td>
-                  <td>Master</td>
-                </tr>
-                <tr>
-                  <td>Mail :</td>
-                  <td><a href="mailto:artembiliaze@gmail.com">artembiliaze@gmail.com</a></td>
-                </tr>
-                <tr>
-                  <td>LinkedIn :</td>
-                  <td><a href="https://www.linkedin.com/in/artembiliaze/">@artembiliaze</a></td>
-                </tr>
-                <tr>
-                  <td>Freelance :</td>
-                  <td>Available</td>
-                </tr>
-              </table>
-            </div>
-            <button class="btn-in-header">Download CV</button>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div>
-            <a name="Portfolio"></a>
-            <p>Our Portfolio</p>
-            <h2>Some Of My Creative Work</h2>
-          </div>
-          <div>
-            <ul>
-              <li><a href="#">All</a></li>
-              <li><a href="#">Mobile</a></li>
-              <li><a href="#">Website</a></li>
-              <li><a href="#">Animation</a></li>
-              <li><a href="#">Exclusive</a></li>
-            </ul>
-          </div>
-          <div>
-            <img src="images/PortfolioPhotoGroupPicture.svg" alt="Photo of my Project">
-          </div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <a name="Services"></a>
-          <p>Why Choose Us</p>
-          <h2>Our Work Services</h2>
-        </div>
-        <div>
-          <img src="images/OurWorkServicesPicture.svg" alt="Our Work Services">
-        </div>
-      </section>
-      <section>
-        <div>
-          <a name="Resume"></a>
-          <p>Resume</p>
-          <h2>Skill & Experience</h2>
-        </div>
-        <div>
-          <button>Design</button>
-          <button>Experience</button>
-          <button>Education</button>
-        </div>
-        <div>
-          <p>Adobe Aillustrator<span>90</span></p>
-          <progress value="90" max="100"></progress>
-          <p>Adobe Photoshop<span>80</span></p>
-          <progress value="80" max="100"></progress>
-          <p>Adobe After Effect<span>70</span></p>
-          <progress value="70" max="100"></progress>
-          <p>Figma<span>60</span></p>
-          <progress value="60" max="100"></progress>
-        </div>
-        <div>
-          <img src="images/ResumePhotoPicture.svg" alt="Resume Photo">
-        </div>
-      </section>
-      <section>
-        <div>
-          <a name="Client"></a>
-          <p>Teatimonial</p>
-          <h2>What Our Client Say About us.</h2>
-          <div>
-            <img src="images/DawnJohnsonInfo.svg" alt="Dawn Johnson Info">
-            <img src="images/DawnJohnsonInfo.svg" alt="Dawn Johnson Info">
-            <img src="images/DawnJohnsonInfo.svg" alt="Dawn Johnson Info">
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="BlogPost">
-          <a name="Blog"></a>
-          <p>Blog Post</p>
-          <h2>Our Latest Blog</h2>
-          <div>
-            <img src="images/BlogPostPicture.svg" alt="Blog Post">
-            <img src="images/BlogPostPicture.svg" alt="Blog Post">
-            <img src="images/BlogPostPicture.svg" alt="Blog Post">
-          </div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <div>
-            <div>
-              <p>Subscribe Now</p>
-              <h2>Get My Newsletter</h2>
-              <p>Get latest news, updates, tips and trics in your inbox</p>
-            </div>
-            <div>
-              <form>
-                <input type="email" name="email" placeholder="Enter your Email" 
-                required>
-                <button type="submit">Subscribe</button>
+              <form action="">
+                <h2>Send Message</h2>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required><br><br>
+                <textarea name="Message" rows="5" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send Message</button>
               </form>
             </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <a name="Contact"></a>
-          <p>Contact</p>
-          <h2>Get In Touch</h2>
-          <div>
-            <h2>Pohone Number</h2>
-            <img src="images/PhoneIcon.svg" alt="Phone Icon"><a href="tel:+380634761650">+380634761650</a><br>
-            <h2>Email Address</h2>
-            <img src="images/EmailIcon.svg" alt="Email Icon"><a href="mailto:artembiliaze@gmail.com">artembiliaze@gmail.com</a>
-            <h2>Office Address</h2>
-            <img src="images/PointIcon.svg" alt="Point Icon"><a href="https://www.google.com/maps?q=European+Union+Ave,+47,+Kiev,+Ukraine" 
-            target="_blank">Europian Union Ave, 47, Kiev, Ukraine</a>
-          </div>
-          <div>
-            <form action="">
-              <h2>Send Message</h2>
-              <input type="text" placeholder="Your Name" required>
-              <input type="email" placeholder="Your Email" required><br><br>
-              <textarea name="Message" rows="5" placeholder="Your Message" required></textarea><br>
-              <button type="submit">Send Message</button>
-            </form>
-          </div>
-            <div>
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.534117547157!2d30.52412341589674!3d50.45007327947271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce498f4b6123%3A0xf07dcb8dbd65c85!2sEuropean%20Union%20Ave%2C%2047%2C%20Kiev%2C%20Ukraine!5e0!3m2!1sen!2sua!4v1695765748045!5m2!1sen!2sua"
-                >
-              </iframe>
+              <div>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.534117547157!2d30.52412341589674!3d50.45007327947271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce498f4b6123%3A0xf07dcb8dbd65c85!2sEuropean%20Union%20Ave%2C%2047%2C%20Kiev%2C%20Ukraine!5e0!3m2!1sen!2sua!4v1695765748045!5m2!1sen!2sua"
+                  >
+                </iframe>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer>
-        <p>All Right Reserved. Designed and Developed by LabArtisan</p>
-      </footer>
-    </main>
+        </section>
+        <footer>
+          <p>All Right Reserved. Designed and Developed by LabArtisan</p>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
