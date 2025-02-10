@@ -35,6 +35,21 @@ body {
   color: black;
 }
 
+.title-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
+  background: rgb(36, 38, 59);
+  padding: 10px;
+}
+
 .header {
   height: 100px;
   max-width: 1285px;
@@ -62,13 +77,13 @@ body {
 
 .menu-buttom {
   background: rgb(254, 70, 28);
-  /* margin-left: 24px; */
 }
 
 .main-banner {
   position: relative;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   max-width: 1440px;
   align-items: center;
   margin: 0 auto;
@@ -120,16 +135,19 @@ body {
   margin-bottom: 36px;
 }
 
-.presentation-content__buttons {
+.presentation-content__buttons,
+.resume-section__content-buttons
+{
   display: flex;
 }
 
-.presentation-content__button-hire {
+.presentation-content__button-hire 
+{
   margin-right: 24px;
   background: rgb(254, 70, 28);
   min-width: 160px;
 }
-.presentation-content__button__item {
+.presentation-content__button__download {
   min-width: 160px;
   border: 2px solid white;
 }
@@ -141,7 +159,7 @@ body {
 
 /* About Me section */
 
-.aboutMe-section {
+.about-me__section {
   display: flex;
   width: 100%;
   height: auto;
@@ -149,47 +167,41 @@ body {
 }
 
 
-.aboutMe-section__content__main {
+.about-me__section__content__main {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 160px;
   padding-bottom: 160px;
 }
 
-.aboutMe-section__content {
+.about-me__section__content {
   display: flex;
   flex-direction: column;
   margin-left: 100px;
 }
 
 
-.aboutMe-section__img > img {
+.about-me__section__img > img 
+{
   margin-top: 50px;
   margin-right: 50px;
   width: 578px;
   height: auto;
 }
 
-.aboutMe-section__content__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+.about-me__section__content__btn
+{
   width: 115px;
   height: 36px;
-  color: rgb(255, 255, 255);
-  font-family: Outfit;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
-  background: rgb(36, 38, 59);
-  padding: 10px;
 }
  
-.aboutMe-section__content__title {
+.about-me__section__content__title 
+{
   display: flex;
   align-items: end;
   color: rgb(255, 255, 255);
@@ -201,7 +213,7 @@ body {
   margin-bottom: 15px;
 }
 
-.aboutMe-section__content__description {
+.about-me__section__content__description {
   color: rgb(255, 255, 255);
   font-family: Public Sans;
   font-size: 16px;
@@ -211,22 +223,23 @@ body {
   height: 130px;
 }
 
-.aboutMe-section__content__dates {
+.about-me__section__content__dates 
+{
   display: flex;
   margin-top: 20px;
 }
 
-.aboutMe-section__content__dates__left {
+.about-me__section__content__dates__left {
   margin-right: 54px;
 }
 
-.aboutMe-section__content__dates__left, .aboutMe-section__content__dates__right {
+.about-me__section__content__dates__left, .about-me__section__content__dates__right {
   display: flex;
   flex-direction: column;
   width: 280px;
 }
 
-.aboutMe-section__content__caption {
+.about-me__section__content__caption {
   color: rgb(255, 255, 255);
   font-family: Outfit;
   font-size: 16px;
@@ -234,7 +247,7 @@ body {
   line-height: 26px;
   margin-right: 15px;
 }
- .aboutMe-section__content__info {
+ .about-me__section__content__info {
   color: rgb(255, 255, 255);
   font-family: Public Sans;
   font-size: 16px;
@@ -245,7 +258,7 @@ body {
  }
 
 
-.aboutMe-section__content__item {
+.about-me__section__content__item {
   margin-bottom: 30px;
 }
 
@@ -367,20 +380,8 @@ body {
 }
 
 .portfolio-section__content-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 115px;
   height: 36px;
-  color: rgb(255, 255, 255);
-  font-family: Outfit;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
-  background: rgb(36, 38, 59);
-  padding: 10px;
 }
 
 .portfolio-section__content-title {
@@ -389,7 +390,7 @@ body {
   color: rgb(255, 255, 255);
   font-family: Outfit;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 48px;
   margin-top: 19px;
   margin-bottom: 15px;
@@ -410,14 +411,22 @@ body {
   margin-bottom: 36px;
 }
 
+.portfolio-section__content-menu__item:hover {
+  color: rgb(254, 70, 28);
+}
+
 .portfolio-section__content-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; 
+  gap: 24px; 
   margin-bottom: 160px;
 }
-  
+.portfolio-section__content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .rectangle-odd, .rectangle-even {
   border-radius: 8px;
   background: rgba(217, 217, 217, 1);
@@ -434,8 +443,278 @@ body {
   height: 544px;
 }
 
-.portfolio-section__content-column {
+.rectangle-even__title {
+  align-items: flex-end;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-left: 29px;
+  padding-top: 461px;
+}
+
+.rectangle-even__info {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 15px;
+  margin-left: 29px;
+  margin-bottom: 28px;
+} 
+
+/* Services */
+
+.services-section {
+  width: 100%;
+  height: auto;
+  background: rgb(36, 38, 59);
+}
+
+.services-section__content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+}
+
+.services-section__content-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 54px;
+}
+
+.services-section__content-btn {
+  width: 172px;
+  height: 36px;
+}
+
+.services-section__content-title {
+  display: flex;
+  align-items: end;
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+.services-section__content-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 31px;
+  margin-bottom: 120px;
+}
+
+.services-section__content-menu__item {
+  width: 307px;
+  height: auto;
+  border-radius: 8px;
+  background: rgb(31, 34, 53);
+}
+
+.services-section__content-menu__item  img:first-child {
+  margin-top: 41px;
+  margin-left: 25px;
+}
+
+.services-section__content-menu__title {
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-top: 27px;
+  margin-left: 30px;
+}
+
+.services-section__content-menu__description {
+  color: rgb(255, 255, 255);
+  font-family: Public Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 238px;
+  height: 72px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.services-section__circle {
+  margin-top: 37px;
+  margin-left: 30px;
+  margin-bottom: 41px;
+  width: 50px;
+  height: 50px;
+  background-color: #2c2c3a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.services-section__circle img:first-of-type {
+  margin-bottom: 41px;
+  margin-right: 25px;
+}
+
+.services-section__circle:hover {
+  background: rgba(254, 70, 28, 1);
+  cursor: pointer;
+}
+
+/* Resume */
+
+.resume-section {
+  width: 100%;
+  height: auto;
+}
+
+.resume-section__content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.resume-section__content-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+ .resume-section__content-btn {
+  width: 97px;
+  height: 36px;
+ }
+
+ .resume-section__content-title {
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-top: 16px;
+  margin-bottom: 47px;
+ }
+
+ .resume-section__content-button-design
+ {
+  width: 90px;
+  height: 36px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
+  background: rgb(36, 38, 59);
+  margin-right: 20px;
+ }
+
+ .resume-section__content-button-experience
+ {
+  width: 121px;
+  height: 36px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
+  background: rgb(36, 38, 59);
+  margin-right: 20px;
+ }
+
+ .resume-section__content-button-education
+ {
+  width: 113px;
+  height: 36px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 24px 0px rgba(15, 16, 24, 0.42);
+  background: rgb(36, 38, 59);
+ }
+
+ .resume-btn:hover
+ {
+  background: rgb(254, 70, 28)
+ }
+
+ .resume-section__content-indicators
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 39px;
+  width: 606px;
+  height: 345px;
+ }
+
+ .resume-section__content__indicators-title
+ {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+ }
+
+ .resume-section__content__indicators-title > span
+ {
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+ }
+
+ .resume-section__content-indicators-scale
+ {
+  width: 606px;
+  height: 18px;
+  border-radius: 300px;
+  background: rgb(255, 255, 255);
+ }
+
+
+.resume-section__content-indicators-scale-aillustrator
+{
+  width: 90%;
+  height: 100%;
+  background: red;
+  border-radius: 300px;
+}
+
+.resume-section__content-indicators-scale-photoshop
+{
+  width: 80%;
+  height: 100%;
+  background: red;
+  border-radius: 300px;
+}
+
+.resume-section__content-indicators-scale-effect
+{
+  width: 70%;
+  height: 100%;
+  background: red;
+  border-radius: 300px;
+}
+
+.resume-section__content-indicators-scale-figma
+{
+  width: 60%;
+  height: 100%;
+  background: red;
+  border-radius: 300px;
+}
+
+.resume-section__content-image
+{
+  margin-left: 76px;
+  margin-top: 130px;
 }
