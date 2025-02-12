@@ -467,19 +467,23 @@ body {
 
 /* Services */
 
-.services-section {
+.services-section,
+.testimonial-section
+{
   width: 100%;
   height: auto;
   background: rgb(36, 38, 59);
 }
 
-.services-section__content {
+.services-section__content
+{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.services-section__content-main {
+.services-section__content-main
+{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -492,7 +496,9 @@ body {
   height: 36px;
 }
 
-.services-section__content-title {
+.services-section__content-title,
+.testimonial-section__content-title
+{
   display: flex;
   align-items: end;
   color: rgb(255, 255, 255);
@@ -525,7 +531,8 @@ body {
   margin-left: 25px;
 }
 
-.services-section__content-menu__title {
+.services-section__content-menu__title
+ {
   color: rgb(255, 255, 255);
   font-family: Outfit;
   font-size: 20px;
@@ -583,7 +590,7 @@ body {
   flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 160px;
+  margin-top: 120px;
   padding-bottom: 160px;
 }
 
@@ -717,4 +724,145 @@ body {
 {
   margin-left: 76px;
   margin-top: 130px;
+}
+
+
+/* Client section */
+
+.testimonial-section__content-btn
+{
+  width: 161px;
+  height: 36px;
+}
+
+.testimonial-section_content
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.testimonial-section__content-reviews
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 31px;
+  margin-top: 34px;
+  margin-bottom: 120px;
+} 
+
+.testimonial-section__content-review-info
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  
+}
+
+.testimonial-section__review-window
+{
+  position: relative;
+  width: 468px;
+  height: 353px;
+}
+
+.testimonial-section__content-review-main
+{
+    width: auto;
+    height: auto;
+    background: rgb(31, 34, 53);
+    padding-top: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+.testimonial-section__content-review__qoutes
+{
+  float: right;
+  margin-right: 103px;
+  margin-top: 37px;
+}
+
+.testimonial-section__content-review-name
+{
+  color: rgb(255, 255, 255);
+  font-family: Outfit;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 41px;
+  margin-left: 42px;
+}
+
+.testimonial-section__content-review-job__position
+{
+  color: rgb(255, 255, 255);
+  font-family: Public Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-left: 42px;
+}
+
+.testimonial-section__horizontal-line 
+{
+  width: 290px;
+  height: 2px;
+  background: rgb(230, 231, 232);
+  margin-left: 43px;
+  margin-bottom: 15px;
+  margin-top: 14px;
+}
+
+.testimonial-section__content-review-description
+{
+  width: 337px;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-right: 45px;
+  padding-bottom: 29px;
+  margin-left: 42px;
+}
+
+.testimonial-section__poligon
+{
+    position: absolute;
+    bottom: 65px;
+    margin-left: 15px;
+}
+
+.testimonial-section__content-review-circles {
+  display: flex;
+  gap: 300px;
+  width: auto;
+}
+
+.testimonial-section__circle
+{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 15px;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  border: 2px solid rgb(254, 70, 28);
+  border-radius: 35px;
+  background: rgb(217, 217, 217);
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-section__circle:hover 
+{
+  background: rgb(254, 70, 28);
 }
