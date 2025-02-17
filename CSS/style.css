@@ -1422,6 +1422,24 @@ iframe
       flex-direction: column;
     }
 
+    .testimonial-section__review-window {
+      width: 410px;
+    }
+
+    .testimonial-section__content-review-description {
+      padding-right: 20px;
+      line-height: 17px;
+    }
+
+    .blogpost-section__content__post-image {
+      width: 340px;
+      height: 252px;
+    }
+
+    .subscribe-section-content__main {
+      padding: 80px 0;
+    }
+
     .subscribe-now__newsletter {
       font-size: 30px;
       text-align: -webkit-center;
@@ -1449,6 +1467,10 @@ iframe
 
     .contact-section__main {
       gap: 50px;
+    }
+
+    .contact-section__message {
+      width: 400px;
     }
 
 
